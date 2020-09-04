@@ -10,7 +10,7 @@ jobs:
     name: Build and deploy the demo site to GitHub Pages
     runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@v2@master
+      - uses: actions/checkout@v2
 
       - name: Use Node.js 10
         uses: actions/setup-node@v1
