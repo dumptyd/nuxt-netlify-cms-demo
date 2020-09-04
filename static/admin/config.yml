@@ -1,0 +1,22 @@
+backend:
+  name: git-gateway
+  branch: master
+
+local_backend: true
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: 'item'
+    label: 'Item'
+    format: 'json'
+    folder: 'content/items'
+    create: true
+    slug: '{{slug}}-{{year}}-{{month}}-{{day}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Is this ready?', name: 'isReady', widget: 'boolean', default: false }
+      - { label: 'Description', name: 'description', widget: 'text' }
