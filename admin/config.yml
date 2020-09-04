@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: github
   branch: master
   repo: dumptyd/nuxt-netlify-cms-demo
   site_domain: nuxt-netlify-cms-demo-identity.netlify.app
