@@ -25,6 +25,11 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+
+  router: {
+    base: process.env.NODE_ENV === 'production' ? '/nuxt-netlify-cms-demo/' : '/'
+  },
+
   /*
   ** Global CSS
   */
@@ -68,4 +73,4 @@ export default {
   */
   build: {
   }
-}
+};
