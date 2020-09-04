@@ -1,6 +1,8 @@
 backend:
   name: git-gateway
   branch: master
+  repo: dumptyd/nuxt-netlify-cms-demo
+  site_domain: nuxt-netlify-cms-demo-identity.netlify.app
 
 local_backend: true
 
